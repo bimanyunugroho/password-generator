@@ -23,17 +23,17 @@
                 <div class="d-flex justify-content-center align-items-center vh-100">
                     <div class="row justify-content-center">
                         <div class="col-md-12 mb-3">
-                            <h2 class="fw-bold mb-3">Generator Password</h2>
+                            <h2 class="fw-bold mb-4">Generator Password</h2>
                             <form action="" method="post">
-                                <input type="text" name="passwordGenerator" id="passwordGenerator" class="form-control passwordGenerator">
+                                <input type="text" name="passwordGenerator" id="passwordGenerator" class="form-control passwordGenerator" readonly placeholder="Please click on button Generate...">
                             </form>
                         </div>
                         <div class="row">
                             <div class="col-md d-flex flex-column mb-2">
-                                <button class="btn btn-success" name="btnGenerator" id="btnGenerator" class="btnGenerator">Generate</button>
+                                <button class="btn btn-success" id="btnGenerator" class="btnGenerator" onclick="genPassword()">Generate Password</button>
                             </div>
                             <div class="col-md d-flex flex-column mb-2">
-                                <button class="btn btn-primary" name="btnCopyGenerate" id="btnCopyGenerate" class="btnCopyGenerate">Copy</button>
+                                <button class="btn btn-primary" id="btnCopyGenerate" class="btnCopyGenerate" onclick="copyPassword()">Copy</button>
                             </div>
                         </div>
                         <p class="mt-4">Develop with <i class="bi bi-arrow-through-heart-fill" style="color: rgb(230, 71, 71);"></i>. <span class="fw-bold">D E V A B I</span></p>
